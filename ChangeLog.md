@@ -1,6 +1,10 @@
 google-search ChangeLog
 ========================================================================
 
+## ?.?.? / ????-??-??
+
+* Removed deprecated SOAP classes  - @thekid
+
 ## 3.1.1 / 2011-01-24
 
 * Added new details element - @thekid
