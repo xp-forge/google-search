@@ -3,6 +3,7 @@ google-search ChangeLog
 
 ## ?.?.? / ????-??-??
 
+* Heads up: Changed Google-Search to depend on XP6 core (@thekid)
 * Converted code base to PHP 5.3 namespaces - @thekid
 * Removed deprecated SOAP classes  - @thekid
 
