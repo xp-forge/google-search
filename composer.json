@@ -1,9 +1,9 @@
 {
-  "name" : "xp-forge/gsa-xmlfeed",
+  "name" : "xp-forge/google-search",
   "type" : "library",
   "homepage" : "http://xp-framework.net/",
   "license" : "BSD-3-Clause",
-  "description" : "Feed API for Google Search Appliance (GSA)",
+  "description" : "Google Websearch Protocol",
   "keywords": ["module", "xp"],
   "require" : {
     "xp-framework/core" : "dev-master",
