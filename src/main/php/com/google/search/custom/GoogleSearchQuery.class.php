@@ -4,6 +4,7 @@
  * Query object
  *
  * @see   xp://com.google.search.custom.GoogleSearchClient
+ * @test  xp://com.google.search.custom.unittest.GoogleSearchQueryTest
  */
 class GoogleSearchQuery extends \lang\Object {
   protected $term= null;
