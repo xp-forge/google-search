@@ -3,6 +3,7 @@ google-search ChangeLog
 
 ## ?.?.? / ????-??-??
 
+* Converted code base to PHP 5.3 namespaces - @thekid
 * Removed deprecated SOAP classes  - @thekid
 
 ## 3.1.1 / 2011-01-24
