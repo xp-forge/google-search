@@ -15,11 +15,17 @@ Example
 -------
 
 ```php
+use com\google\search\custom\GoogleSearchClient;
+use util\cmd\Console;
+
 $client= new GoogleSearchClient('http://gsa23.enterprisedemo-google.com/search');
 $response= $client->searchFor((new GoogleSearchQuery())
   ->withTerm('test')
   ->startingAt(10)
 );
+
+Console::writeLinef('Searching for "test" took %3.f second(s)', $response->getTime());
+Console::writeLine('Results: ', $response->getResultSet());
 ```
 
 API
