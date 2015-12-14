@@ -58,7 +58,7 @@ class Response extends \lang\Object {
    * @param   string name
    * @param   string value
    */
-  #[@xmlmapping(element= 'PARAM', pass= array('@name', '@value'))]
+  #[@xmlmapping(element= 'PARAM', pass= ['@name', '@value'])]
   public function addParam($name, $value) {
     $this->params[$name]= $value;
   }

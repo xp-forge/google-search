@@ -3,6 +3,12 @@ google-search ChangeLog
 
 ## ?.?.? / ????-??-??
 
+## 5.0.0 / 2015-12-14
+
+* **Heads up**: Changed minimum XP version to run webtests to XP
+  6.5.0, and with it the minimum PHP version to PHP 5.5
+  (@thekid)
+
 ## 4.0.1 / 2015-02-12
 
 * Changed dependency to use XP ~6.0 (instead of dev-master) - @thekid

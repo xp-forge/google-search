@@ -6,10 +6,10 @@
   "description" : "Google Websearch Protocol",
   "keywords": ["module", "xp"],
   "require" : {
-    "xp-framework/core" : "~6.0",
-    "xp-framework/xml"  : "~6.0",
-    "xp-framework/http" : "~6.0",
-    "php" : ">=5.4.0"
+    "xp-framework/core" : "^6.5",
+    "xp-framework/xml"  : "^6.0",
+    "xp-framework/http" : "^6.0",
+    "php" : ">=5.5.0"
   },
   "autoload" : {
     "files" : ["src/main/php/autoload.php"]

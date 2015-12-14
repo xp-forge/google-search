@@ -136,7 +136,7 @@ class Result extends \lang\Object {
    * @param   string name
    * @param   string value
    */
-  #[@xmlmapping(element= 'FS', pass= array('@NAME', '@VALUE'))]
+  #[@xmlmapping(element= 'FS', pass= ['@NAME', '@VALUE'])]
   public function setDetail($name, $value) {
     $this->details[$name]= $value;
   }
@@ -156,7 +156,7 @@ class Result extends \lang\Object {
    * @param   string name
    * @param   string value
    */
-  #[@xmlmapping(element= 'MT', pass= array('@N', '@V'))]
+  #[@xmlmapping(element= 'MT', pass= ['@N', '@V'])]
   public function setMetaInfo($name, $value) {
     $this->meta[$name]= $value;
   }
