@@ -86,6 +86,6 @@ class GoogleSearchQuery extends \lang\Object {
    * @return  string
    */
   public function toString() {
-    return $this->getClassName().'(term= "'.$this->term.'", start= '.$this->start.', num= '.$this->num.')';
+    return nameof($this).'(term= "'.$this->term.'", start= '.$this->start.', num= '.$this->num.')';
   }
 }

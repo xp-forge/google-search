@@ -34,6 +34,6 @@ class Spellings extends \lang\Object {
    * @return  string
    */
   public function toString() {
-    return $this->getClassName().'('.sizeof($this->suggestions).')@'.xp::stringOf($this->suggestions);
+    return nameof($this).'('.sizeof($this->suggestions).')@'.xp::stringOf($this->suggestions);
   }
 }

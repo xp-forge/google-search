@@ -186,7 +186,7 @@ class Result extends \lang\Object {
       "  [details]  %s\n".
       "  [meta]     %s\n".
       "}",
-      $this->getClassName(),
+      nameof($this),
       $this->index,
       $this->title,
       $this->url,

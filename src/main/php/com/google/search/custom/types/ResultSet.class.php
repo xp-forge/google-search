@@ -79,7 +79,7 @@ class ResultSet extends \lang\Object {
     }
     return sprintf(
       "%s(total ~ %d%s)@{\n%s}",
-      $this->getClassName(),
+      nameof($this),
       $this->total,
       $this->filtered ? ', filtered' : '',
       $entries

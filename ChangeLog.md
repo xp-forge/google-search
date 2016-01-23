@@ -3,6 +3,12 @@ google-search ChangeLog
 
 ## ?.?.? / ????-??-??
 
+## 5.0.1 / 2016-01-23
+
+* Fix code to use `nameof()` instead of the deprecated `getClassName()`
+  method from lang.Generic. See xp-framework/core#120
+  (@thekid)
+
 ## 5.0.0 / 2015-12-14
 
 * **Heads up**: Changed minimum XP version to run webtests to XP

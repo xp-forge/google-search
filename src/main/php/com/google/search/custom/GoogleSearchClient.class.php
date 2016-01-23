@@ -71,6 +71,6 @@ class GoogleSearchClient extends \lang\Object {
    * @return  string
    */
   public function toString() {
-    return $this->getClassName().'<'.$this->conn->toString().'>';
+    return nameof($this).'<'.$this->conn->toString().'>';
   }
 }

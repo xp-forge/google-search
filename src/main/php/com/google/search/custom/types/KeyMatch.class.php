@@ -53,6 +53,6 @@ class KeyMatch extends \lang\Object {
    * @return  string
    */
   public function toString() {
-    return $this->getClassName().'(url= '.$this->url.', "'.$this->text.'")';
+    return nameof($this).'(url= '.$this->url.', "'.$this->text.'")';
   }
 }

@@ -182,7 +182,7 @@ class Response extends \lang\Object {
       "  [keymatches] %s\n".
       "  [results]    %s\n".
       "}",
-      $this->getClassName(),
+      nameof($this),
       $this->query,
       $this->time,
       str_replace("\n", "\n  ", \xp::stringOf($this->params)),
