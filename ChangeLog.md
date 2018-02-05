@@ -3,6 +3,12 @@ google-search ChangeLog
 
 ## ?.?.? / ????-??-??
 
+## 6.0.0 / 2018-02-05
+
+* **Heads up**: Dropped PHP 5.5 support; added compatibility with XP7,
+  XP8, XP9 and PHP 7+
+  (@thekid)
+
 ## 5.0.1 / 2016-01-23
 
 * Fix code to use `nameof()` instead of the deprecated `getClassName()`
