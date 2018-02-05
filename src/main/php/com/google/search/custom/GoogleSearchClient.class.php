@@ -13,7 +13,7 @@ use io\IOException;
  * Example:
  * ```php
  * $client= new GoogleSearchClient('http://gsa23.enterprisedemo-google.com/search');
- * $response= $client->searchFor(create(new GoogleSearchQuery())
+ * $response= $client->searchFor((new GoogleSearchQuery())
  *   ->withTerm('test')
  *   ->startingAt(10)
  * );
@@ -27,7 +27,7 @@ class GoogleSearchClient {
   /**
    * Constructor
    *
-   * @param   var conn either a HttpConnection or a string
+   * @param  string|peer.http.HttpConnection $conn An URL
    */
   public function __construct($conn) {
     $this->conn= $conn instanceof HttpConnection ? $conn : new HttpConnection($conn);
