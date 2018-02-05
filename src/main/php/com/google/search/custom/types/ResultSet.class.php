@@ -5,7 +5,7 @@
  *
  * @see   http://www.google.com/cse/docs/resultsxml.html#results_xml_tag_RES
  */
-class ResultSet extends \lang\Object {
+class ResultSet {
   protected $total= 0;
   protected $filtered= false;
   protected $entries= [];

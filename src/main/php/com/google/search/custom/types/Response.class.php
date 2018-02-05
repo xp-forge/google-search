@@ -5,7 +5,7 @@
  *
  * @see   http://www.google.com/cse/docs/resultsxml.html#results_xml_tag_GSP
  */
-class Response extends \lang\Object {
+class Response {
   protected $time= 0.0;
   protected $query= '';
   protected $params= [];

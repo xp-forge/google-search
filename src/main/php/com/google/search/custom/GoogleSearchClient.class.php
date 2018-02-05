@@ -21,7 +21,7 @@ use io\IOException;
  *
  * @see   http://www.google.com/cse/docs/resultsxml.html
  */
-class GoogleSearchClient extends \lang\Object {
+class GoogleSearchClient {
   protected $conn, $unmarshaller;
 
   /**

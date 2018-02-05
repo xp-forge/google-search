@@ -5,7 +5,7 @@
  *
  * @see   xp://com.google.search.custom.types.Response#getSynonyms
  */
-class Synonyms extends \lang\Object {
+class Synonyms {
   protected $suggestions= [];
   
   /**

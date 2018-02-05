@@ -5,7 +5,7 @@
  *
  * @see   xp://com.google.search.custom.types.Response#getKeyMatches
  */
-class KeyMatch extends \lang\Object {
+class KeyMatch {
   protected $url= '';
   protected $text= '';
   

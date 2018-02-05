@@ -6,7 +6,7 @@
  * @see   xp://com.google.search.custom.types.Response#getSpellings
  * @see   http://www.google.com/cse/docs/resultsxml.html#results_xml_tag_Spelling
  */
-class Spellings extends \lang\Object {
+class Spellings {
   protected $suggestions= [];
   
   /**

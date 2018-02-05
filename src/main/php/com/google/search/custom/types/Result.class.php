@@ -6,7 +6,7 @@
  * @see   xp://com.google.search.custom.types.ResultSet#getEntries
  * @see   http://www.google.com/cse/docs/resultsxml.html#results_xml_tag_R
  */
-class Result extends \lang\Object {
+class Result {
   protected $index= 0;
   protected $url= '';
   protected $title= '';

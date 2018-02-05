@@ -6,7 +6,7 @@
  * @see   xp://com.google.search.custom.GoogleSearchClient
  * @test  xp://com.google.search.custom.unittest.GoogleSearchQueryTest
  */
-class GoogleSearchQuery extends \lang\Object {
+class GoogleSearchQuery {
   protected $term= null;
   protected $start= 0;
   protected $num= 10;
