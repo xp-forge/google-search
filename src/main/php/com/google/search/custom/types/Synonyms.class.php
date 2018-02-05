@@ -5,7 +5,7 @@
  *
  * @see   xp://com.google.search.custom.types.Response#getSynonyms
  */
-class Synonyms {
+class Synonyms implements \lang\Value {
   protected $suggestions= [];
   
   /**
@@ -26,6 +26,17 @@ class Synonyms {
   public function getSuggestions() {
     return $this->suggestions;
   }
+
+  /** @return string */
+  public function hashCode() { return spl_object_hash($this); }
+
+  /**
+   * Compares another value to this object
+   *
+   * @param  var $value
+   * @return int
+   */
+  public function compareTo($value) { return $this === $value ? 0 : 1; }
 
   /**
    * Creates a string representation of this result set

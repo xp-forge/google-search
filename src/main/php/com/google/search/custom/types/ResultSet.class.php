@@ -5,7 +5,7 @@
  *
  * @see   http://www.google.com/cse/docs/resultsxml.html#results_xml_tag_RES
  */
-class ResultSet {
+class ResultSet implements \lang\Value {
   protected $total= 0;
   protected $filtered= false;
   protected $entries= [];
@@ -61,12 +61,23 @@ class ResultSet {
   /**
    * Returns whether this result set was entries
    *
-   * @return  int
+   * @return  com.google.search.custom.types.Result[]
    */
   public function getEntries() {
     return $this->entries;
   }
-  
+
+  /** @return string */
+  public function hashCode() { return spl_object_hash($this); }
+
+  /**
+   * Compares another value to this object
+   *
+   * @param  var $value
+   * @return int
+   */
+  public function compareTo($value) { return $this === $value ? 0 : 1; }
+
   /**
    * Creates a string representation of this result set
    *

@@ -5,7 +5,7 @@
  *
  * @see   xp://com.google.search.custom.types.Response#getKeyMatches
  */
-class KeyMatch {
+class KeyMatch implements \lang\Value {
   protected $url= '';
   protected $text= '';
   
@@ -46,6 +46,17 @@ class KeyMatch {
   public function getText() {
     return $this->text;
   }
+
+  /** @return string */
+  public function hashCode() { return spl_object_hash($this); }
+
+  /**
+   * Compares another value to this object
+   *
+   * @param  var $value
+   * @return int
+   */
+  public function compareTo($value) { return $this === $value ? 0 : 1; }
 
   /**
    * Creates a string representation of this result set

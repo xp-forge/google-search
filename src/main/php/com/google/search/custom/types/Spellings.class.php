@@ -6,7 +6,7 @@
  * @see   xp://com.google.search.custom.types.Response#getSpellings
  * @see   http://www.google.com/cse/docs/resultsxml.html#results_xml_tag_Spelling
  */
-class Spellings {
+class Spellings implements \lang\Value {
   protected $suggestions= [];
   
   /**
@@ -27,6 +27,17 @@ class Spellings {
   public function getSuggestions() {
     return $this->suggestions;
   }
+
+  /** @return string */
+  public function hashCode() { return spl_object_hash($this); }
+
+  /**
+   * Compares another value to this object
+   *
+   * @param  var $value
+   * @return int
+   */
+  public function compareTo($value) { return $this === $value ? 0 : 1; }
 
   /**
    * Creates a string representation of this result set

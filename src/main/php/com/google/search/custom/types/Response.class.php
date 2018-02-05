@@ -5,7 +5,7 @@
  *
  * @see   http://www.google.com/cse/docs/resultsxml.html#results_xml_tag_GSP
  */
-class Response {
+class Response implements \lang\Value {
   protected $time= 0.0;
   protected $query= '';
   protected $params= [];
@@ -167,6 +167,17 @@ class Response {
   public function getSynonyms() {
     return $this->synonyms;
   }
+
+  /** @return string */
+  public function hashCode() { return spl_object_hash($this); }
+
+  /** 
+   * Compares another value to this object
+   *
+   * @param  var $value
+   * @return int
+   */
+  public function compareTo($value) { return $this === $value ? 0 : 1; }
 
   /**
    * Creates a string representation of this result set

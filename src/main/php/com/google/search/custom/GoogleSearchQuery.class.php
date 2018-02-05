@@ -6,7 +6,7 @@
  * @see   xp://com.google.search.custom.GoogleSearchClient
  * @test  xp://com.google.search.custom.unittest.GoogleSearchQueryTest
  */
-class GoogleSearchQuery {
+class GoogleSearchQuery implements \lang\Value {
   protected $term= null;
   protected $start= 0;
   protected $num= 10;
@@ -79,6 +79,17 @@ class GoogleSearchQuery {
   public function getNumResults() {
     return $this->num;
   }
+
+  /** @return string */
+  public function hashCode() { return spl_object_hash($this); }
+
+  /**
+   * Compares another value to this object
+   *
+   * @param  var $value
+   * @return int
+   */
+  public function compareTo($value) { return $this === $value ? 0 : 1; }
 
   /**
    * Creates a string representation of this object

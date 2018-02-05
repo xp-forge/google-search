@@ -6,7 +6,7 @@
  * @see   xp://com.google.search.custom.types.ResultSet#getEntries
  * @see   http://www.google.com/cse/docs/resultsxml.html#results_xml_tag_R
  */
-class Result {
+class Result implements \lang\Value {
   protected $index= 0;
   protected $url= '';
   protected $title= '';
@@ -169,7 +169,18 @@ class Result {
   public function getMetaInfos() {
     return $this->meta;
   }
-  
+
+  /** @return string */
+  public function hashCode() { return spl_object_hash($this); }
+
+  /** 
+   * Compares another value to this object
+   *
+   * @param  var $value
+   * @return int
+   */
+  public function compareTo($value) { return $this === $value ? 0 : 1; }
+
   /**
    * Creates a string representation of this result set entry
    *
