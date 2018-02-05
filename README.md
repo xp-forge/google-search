@@ -32,10 +32,12 @@ Console::writeLine('Results: ', $response->getResultSet());
 API
 --
 ```sh
-$ xp -r com.google.search.custom
-@FileSystemCL<...\xp\google-search\src\main\php\>
+$ xp mirror com.google.search.custom
+@FileSystemCL<./src/main/php>
+@FileSystemCL<./src/test/php>
 package com.google.search.custom {
   package com.google.search.custom.types
+  package com.google.search.custom.unittest
 
   public class com.google.search.custom.GoogleSearchClient
   public class com.google.search.custom.GoogleSearchQuery
